@@ -1,0 +1,22 @@
+.newPostModal__newPost {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+    background-color: white;
+    border-top: 1px solid lightgray;
+}
+
+.postUpload__progress {
+    width: 100%;
+}
+
+.newPostModal__headerImage {
+    width: 120px;
+    object-fit: contain;
+    
+}
+#modal-modal-title {
+    display: flex;
+    justify-content: center;
+}
