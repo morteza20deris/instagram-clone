@@ -20,7 +20,10 @@ function SignInModal({modalOpen,setModalOpen}) {
           setModalOpen(false)
         })
       
-      .catch((error) => alert(error.code))
+        .catch((error) => {
+          if(buttonRef.current) buttonRef.current.textContent = "LogIn"
+          alert(error.code)
+        })
   }
 
   const style = {
