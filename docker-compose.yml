@@ -1,0 +1,15 @@
+services:
+  app: 
+    image: morteza20deris/instagram-clone:1
+    build: 
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 3000:3000
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: ./app/src
+        - action: rebuild
+          path: package.json

@@ -1,0 +1,9 @@
+services:
+  app: 
+    image: morteza20deris/instagram-clone:1
+    build: 
+      context: .
+      dockerfile: dockerfile.prod
+    ports:
+      - 80:80
+    restart: unless-stopped
